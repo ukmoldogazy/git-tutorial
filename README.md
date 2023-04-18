@@ -81,3 +81,11 @@ Before you start using the git, you need to master the basic commands that are e
 **rm -R**
 
 - Command to recursively remove (remove all files inside a directory and the directory itself) a directory: `rm -R “directory name”`
+
+# The algorithm works with the git repository
+
+1. Create a directory
+2. Initialize the repository with the command `git init`
+3. View repository status: `git status`
+4. Add file to staged: `git add “filename” or git add .`
+5. Make a commit: `git commit -m “Commit message”`
