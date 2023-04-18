@@ -95,3 +95,53 @@ Before you start using the git, you need to master the basic commands that are e
 1. Check repository status: `git status`
 2. Add modified file to staged: `git add “filename” or git add .`
 3. Make a commit: `git commit -m “Commit message”`
+
+# **Creating a commit with vim**
+
+We learned that you can create commits with the command `git commit -m ‘Commit message’`. In addition to this method, we can create a commit using the Vim code editor that is built into git.
+
+To make a commit, you need to write the git commit command without the -m flag. An incomprehensible code editor will open right inside the terminal. This editor is called Vim. It is the same code editor as VS Code. Vim runs inside the console and you can write code in it. Vim is a very powerful and incredibly fast code editor. There are projects where there are thousands and thousands of lines of code in one file. Regular graphical editors may have difficulty processing such files, but Vim can handle such files with ease.
+
+So, after the git commit command, the terminal opened Vim for us. How now to write the commit message in it? To start writing the file, you need to press the i key and type the commit message. After that press `esc` then `:` and `wq`. The wq (write quit) command means to write a file and then quit.
+
+# **Git commit command with -am flag**
+
+The git commit command can be used with the -am flag: `git commit -am ‘Commit message’` - this command immediately adds files to staged and commits with the specified message
+
+# **Commit empty directories**
+
+By default, git does not add empty directories to a commit. If you need an empty directory to be included in the commit, then you need to create a **.gitkeep** file inside the directory
+
+# **Ignoring files**
+
+If you need to exclude some files or directories from commits, you need to create a .gitignore file and write the name of the files or directories in gitignore.
+
+# **History of commits**
+
+**gitlog**
+
+- git log command shows commit history
+
+  **git log with --oneline flag**
+
+- The git log --oneline command shows the commit history in a compact way without additional data
+
+  **git checkout --**
+
+- Command to rollback files that have not yet been staged
+  **`git checkout -- “Name of file(s)”`**
+
+**git checkout “commit hash”**
+
+- Command to switch over commits
+  **`git checkout “commit hash”`**
+
+**git reset**
+
+- Command to rollback files that got into staged
+  **`git reset “filename”`**
+
+**git reset --hard**
+
+- Command to roll back files that have already been committed.
+  **`git reset --hard HEAD^1`**
