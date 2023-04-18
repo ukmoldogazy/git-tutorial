@@ -89,3 +89,9 @@ Before you start using the git, you need to master the basic commands that are e
 3. View repository status: `git status`
 4. Add file to staged: `git add “filename” or git add .`
 5. Make a commit: `git commit -m “Commit message”`
+
+# **Algorithm for working with an already initialized repository**
+
+1. Check repository status: `git status`
+2. Add modified file to staged: `git add “filename” or git add .`
+3. Make a commit: `git commit -m “Commit message”`
