@@ -128,20 +128,90 @@ If you need to exclude some files or directories from commits, you need to creat
 
   **git checkout --**
 
-- Command to rollback files that have not yet been staged
-  **`git checkout -- “Name of file(s)”`**
+- Command to rollback files that have not yet been staged: `git checkout -- “Name of file(s)”`
 
 **git checkout “commit hash”**
 
-- Command to switch over commits
-  **`git checkout “commit hash”`**
+- Command to switch over commits: `git checkout “commit hash”`
 
 **git reset**
 
-- Command to rollback files that got into staged
-  **`git reset “filename”`**
+- Command to rollback files that got into staged: `git reset “filename”`
 
 **git reset --hard**
 
-- Command to roll back files that have already been committed.
-  **`git reset --hard HEAD^1`**
+- Command to roll back files that have already been committed: `git reset --hard HEAD^1`
+
+# **Branches**
+
+**git branch**
+
+- This command shows the existing branches in the repository
+
+**git branch**
+This command can also create a branch if you specify the name of the branch to be created: `git branch “branch name”`
+
+**git checkout**
+
+- This command allows you to switch between branches: `git checkout “branch name”`
+
+**git checkout -b**
+
+- This command creates and immediately switches the pointer, but the created branch: `git checkout -b “branch name”`
+
+**git merge**
+
+- Command to merge branches: `git merge “branch name”`
+
+**git branch -d**
+
+- Command to delete a branch: `git branch -d “branch name”`
+
+# We will learn how to create remote repositories, how to link a remote repository to a local one, and much more.
+
+**List of commands we'll cover:**
+
+**`git remote add`**
+
+- Adding a remote repository
+  To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
+- The git remote add command takes two arguments:
+
+A remote name, for example, origin
+
+A remote URL, for example, https://github.com/OWNER/REPOSITORY.git
+
+For example:
+
+```$ git remote add origin https://github.com/OWNER/REPOSITORY.git
+# Set a new remote
+$ git remote -v
+
+# Verify new remote
+
+> origin https://github.com/OWNER/REPOSITORY.git (fetch)
+> origin https://github.com/OWNER/REPOSITORY.git (push)
+```
+
+**`git push`**
+
+### The git push command takes two arguments:
+
+- A remote name, for example, origin
+- A branch name, for example, main
+
+For example:
+
+```
+$ git push REMOTE-NAME BRANCH-NAME
+```
+
+As an example, you usually run git push origin main to push your local changes to your online repository.
+
+**`git pull`**
+
+**git pull** is one of the 4 remote operations within Git. Without running **git pull**, your local repository will never be updated with changes from the remote. **git pull** should be used every day you interact with a repository with a remote, at the minimum. That's why **git pull** is one of the most used Git commands.
+
+```
+$ git pull
+```
