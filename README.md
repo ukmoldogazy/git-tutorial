@@ -48,7 +48,7 @@ Before you start using the git, you need to master the basic commands that are e
 - By default, the terminal opens in the user's directory, i.e. in the home folder on your computer's hard drive.
 - Moving through directories is done with the command `cd “directory name”`
 - Move up a directory one level up: `cd ..`
-- Move up a directory 2 levels up: `cd ../..`
+- Move up a directory 2 levels up: `cd ../../`
 
 **mkdir**
 
